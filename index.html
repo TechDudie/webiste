@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="source/css/index.css">
-    <script src="/source/js/index.js"></script>
+    
+    <script>
+        let display_letter = () => {
+            let root = document.documentElement;
+            let base = document.getElementById('base')
+
+            root.style.setProperty('--page-height', '200px' );
+            document.getElementById('hny').style.display = "block";
+            base.classList.remove('increment')
+        }
+    </script>
 </head>
 <body>
     <div class="letter "  onclick="display_letter()">
