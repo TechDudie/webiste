@@ -6,7 +6,7 @@
 body {
     margin:  0 0;
     background: pink;
-    font-family: Dancing-script;
+    font-family: 'Dancing Script', cursive;
     font-size:calc(8.3px * var(--size-div));
 }
 .letter {
@@ -50,7 +50,3 @@ body {
     padding:calc(26px * var(--size-div)) calc(7px*3);
 user-select: none;
 }
-  @font-face {
-    font-family: Dancing-script;
-    src: url(/source/fonts/DancingScript-Bold.ttf);
-  }
