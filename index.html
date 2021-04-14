@@ -9,13 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> 
     <script>
+        function nap(ms) {
+            // ;)
+            var date = new Date();
+            var time = date.getTime();
+            var now = 0;
+            while (true) {
+                now = date.getTime();
+                if (now > time + ms) {
+                    break;
+                }
+            }
+        }
         let display_letter = () => {
             let root = document.documentElement;
             let base = document.getElementById('base')
             var i;
             for (i = 101; i = 200; i++) { 
                 root.style.setProperty('--page-height', i.toString(10) + "px" );
-                await sleep(10);
+                nap(10);
             }
             document.getElementById('hny').style.display = "block";
             base.classList.remove('increment')
